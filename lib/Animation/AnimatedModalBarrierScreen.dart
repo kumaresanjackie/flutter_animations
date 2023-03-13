@@ -53,7 +53,6 @@ class AnimatedModalBarrierWidgetState extends State<AnimatedModalBarrierWidget>
 
           ScaffoldMessenger.of(context)
               .showSnackBar(SnackBar(content: Text('Button is pressed')));
-
           Future.delayed(const Duration(seconds: 5), () {
             setState(() {
               _isLoading = false;

@@ -59,7 +59,6 @@ class ExampleOneScreenTwo extends StatelessWidget {
               final Widget fromHero = fromHeroContext.widget;
               final Widget toHero = toHeroContext.widget;
               return ScaleTransition(
-
                 scale: animation.drive(
                   Tween<double>(begin: 0, end: 1,).chain(
                     CurveTween(curve: Curves.easeInOut),

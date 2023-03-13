@@ -20,7 +20,7 @@ class _AnimatedPhysicalModelScreenState extends State<AnimatedPhysicalModelScree
             AnimatedPhysicalModel(
               duration: const Duration(milliseconds: 500),
               curve: Curves.fastOutSlowIn,
-              elevation: _first ? 0 : 6.0,
+              elevation: _first ? 0 : 60.0,
               shape: BoxShape.rectangle,
               shadowColor: Colors.black,
               color: Colors.white,

@@ -20,8 +20,8 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
         child: Stack(
           children: <Widget>[
             AnimatedPositioned(
-              duration: Duration(seconds: 5),
-              curve: Curves.bounceInOut,
+              duration: Duration(milliseconds: 500),
+              curve: Curves.easeIn,
               top: _isExpanded ? 100 : 200,
               left: _isExpanded ? 50 : 150,
               child: Container(

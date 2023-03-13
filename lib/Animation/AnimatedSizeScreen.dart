@@ -26,7 +26,6 @@ class _AnimatedSizeScreenState extends State<AnimatedSizeScreen>  {
               child: Text('Toggle Details'),
             ),
             AnimatedSize(
-
               duration: Duration(seconds: 1),
               curve: Curves.easeInOut,
               child: _showDetails

@@ -4,7 +4,10 @@ import '../AnimatedIconScreen.dart';
 import '../AnimationButtonInkWell.dart';
 import '../customwidget.dart';
 import 'HeroAnimation.dart';
+import 'HeroAnimationFSB.dart';
+import 'HeroAnimationPH.dart';
 import 'HeroScaleTransition.dart';
+import 'SimpleHeroAnimations.dart';
 
 class HeroAnimationHome extends StatefulWidget {
   const HeroAnimationHome({Key? key}) : super(key: key);
@@ -25,10 +28,19 @@ class _HeroAnimationHomeState extends State<HeroAnimationHome> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomWidget(name: "Simple Hero Animation", routewidget: ExampleFirstScreenOne()),
-              CustomWidget(name: "ScaleTransition", routewidget: ExampleOneScreenOne()),
-
-
+              CustomWidget(
+                  name: "Simple Hero Animation",
+                  routewidget: ExampleFirstScreenOne()),
+              CustomWidget(
+                  name: "Simple Hero Animation List",
+                  routewidget: HeroHomePage()),
+              CustomWidget(
+                  name: "ScaleTransition", routewidget: ExampleOneScreenOne()),
+              CustomWidget(
+                  name: "Hero FlightShuttle Builder",
+                  routewidget: FirstScreenOne()),
+              CustomWidget(
+                  name: "Hero PlaceHolder", routewidget: FirstScreenTwo())
             ],
           ),
         ),

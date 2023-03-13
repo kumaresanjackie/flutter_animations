@@ -15,7 +15,7 @@ class AnimationBuilderOne extends StatefulWidget {
 class _AnimationBuilderOneState extends State<AnimationBuilderOne>
     with TickerProviderStateMixin {
   late final AnimationController _controller = AnimationController(
-    duration: const Duration(milliseconds: 10),
+    duration: const Duration(seconds: 10),
     vsync: this,
   )..repeat();
 

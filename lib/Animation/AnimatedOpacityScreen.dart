@@ -24,7 +24,7 @@ class _AnimatedOpacityScreenState extends State<AnimatedOpacityScreen> {
       ),
       body: Center(
         child: AnimatedOpacity(
-          opacity: _isVisible ? 1.0 : 0.0,
+          opacity: _isVisible ? 1.0 : 0.1,
           duration: Duration(milliseconds: 500),
           child: Container(
             width: 200,

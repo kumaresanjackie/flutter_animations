@@ -16,23 +16,9 @@ void main() {
         backgroundColor: Colors.purpleAccent,
         shape: Border.all(color: Colors.black, width: 2),
         centerTitle: true,
+
       ),
 
-      /*       colorScheme: ColorScheme(
-
-            background: Colors.orange,
-            brightness: Brightness.light,
-            //background color
-            primary: Colors.pink,
-            //text
-            onPrimary: Colors.black,
-            secondary: Colors.yellow,
-            onSecondary: Colors.tealAccent,
-            error: Colors.purpleAccent,
-            onError: Colors.indigoAccent,
-            onBackground: Colors.cyanAccent,
-            surface: Colors.teal,
-            onSurface: Colors.cyan),*/
     ),
     home: MyApp(),
   ));
@@ -58,7 +44,7 @@ class _MyAppState extends State<MyApp> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomWidget(
-              name: "Animation Container",
+              name: "Animation",
               routewidget: AnimationContainerHome(),
             ),
             CustomWidget(

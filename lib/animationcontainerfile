@@ -1,61 +1,43 @@
 \\List of Animations
 
-1. AnimatedPositioned:
+AnimatedPositioned:
 AnimatedPositioned allows you to animate the position of a widget relative to its normal position. This can be used to create smooth transitions between different positions.
 
-2. AnimatedContainer:
+AnimatedContainer:
 An AnimatedContainer allows you to animate the properties of a container. You can animate the size, background color, border radius, and more.
 
-3. AnimatedCrossFade:
+AnimatedCrossFade:
 AnimatedCrossFade allows you to animate between two widgets by slowly fading one out and the other in.
 
-4. AnimatedBuilder:
+AnimatedBuilder:
 An AnimatedBuilder allows you to specify a custom widget that is built whenever the animation changes. This can be used to create complex animations with multiple widgets.
 
-5. AnimatedOpacity:
+AnimatedOpacity:
 AnimatedOpacity allows you to animate the opacity of a widget. This can be used to fade in and out widgets.
 
-6. AnimatedSwitcher:
+AnimatedSwitcher:
 An AnimatedSwitcher allows you to animate between two widgets by quickly switching them out.
 
-7. AnimatedDefaultTextStyle:
+AnimatedDefaultTextStyle:
 AnimatedDefaultTextStyle allows you to animate the style of a Text widget. This can be used to animate text styles like font size, color, and font family.
 
-8. AnimatedListState:
+AnimatedListState:
 An AnimatedListState allows you to animate the content of a ListView. This can be used to add or remove elements from a list with smooth animation.
 
-9. AnimatedTheme:
+AnimatedTheme:
 AnimatedTheme allows you to animate the theme of an app. This can be used to create transitions between different themes.
 
-10. AnimatedWidgets:
-AnimatedWidgets are a set of custom widgets that are designed to be animated. This includes AnimatedIcons, AnimatedText, and AnimatedSwipeable.
-
-11. AnimatedSize:
+AnimatedSize:
 AnimatedSize allows you to animate the size of a widget. This can be used to create smooth transitions between different sizes.
 
-12. AnimatedPadding:
+AnimatedPadding:
 AnimatedPadding allows you to animate the padding of a widget. This can be used to create smooth transitions between different paddings.
 
-13. AnimatedPositionedDirectional:
+AnimatedPositionedDirectional:
 AnimatedPositionedDirectional allows you to animate the position of a widget relative to its normal position, but with the ability to specify a direction.
 
-14. AnimatedPhysicalModel:
+AnimatedPhysicalModel:
 AnimatedPhysicalModel allows you to animate the physical properties of a widget. This can be used to animate the elevation, color, and shape of a widget.
 
-15. AnimatedSafeArea:
-AnimatedSafeArea allows you to animate the size of a safe area. This can be used to create smooth transitions between different safe areas.
-
-16. AnimatedClipPath:
-AnimatedClipPath allows you to animate the clip path of a widget. This can be used to create smooth transitions between different clip paths.
-
-17. AnimatedFractionalOffset:
-AnimatedFractionalOffset allows you to animate the offset of a widget relative to its normal position. This can be used to create smooth transitions between different offsets.
-
-18. AnimatedDecoratedBox:
-AnimatedDecoratedBox allows you to animate the decoration of a widget. This can be used to create smooth transitions between different decorations.
-
-19. AnimatedOpacityTransition:
-AnimatedOpacityTransition allows you to animate between two widgets by gradually fading one out and the other in.
-
-20. AnimatedPhysicalModelTransition:
+AnimatedPhysicalModelTransition:
 AnimatedPhysicalModelTransition allows you to animate between two widgets by transitioning their physical properties.

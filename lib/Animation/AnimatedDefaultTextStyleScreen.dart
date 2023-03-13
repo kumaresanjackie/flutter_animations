@@ -28,6 +28,7 @@ class _AnimatedDefaultTextStyleScreenState extends State<AnimatedDefaultTextStyl
   void _increaseFontSize() {
     setState(() {
       _fontSize += 2.0;
+      // _fontSize = _fontSize + 2.0;
     });
   }
 

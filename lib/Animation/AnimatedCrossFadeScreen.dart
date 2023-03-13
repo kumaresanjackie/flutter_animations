@@ -18,7 +18,7 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
       ),
       body: Center(
         child: AnimatedCrossFade(
-          duration: Duration(milliseconds: 500),
+          duration: Duration(seconds: 3),
           firstChild: Container(
             width: 200,
             height: 200,

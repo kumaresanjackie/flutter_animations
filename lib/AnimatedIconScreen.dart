@@ -43,11 +43,12 @@ class _AnimatedIconScreenState extends State<AnimatedIconScreen> with TickerProv
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("AnimatedIcon"),),
       body: Center(
         child: GestureDetector(
           onTap: _togglePlayPause,
           child: AnimatedIcon(
-            icon: AnimatedIcons.view_list,
+            icon: AnimatedIcons.play_pause,
             progress: _animation,
             size: 50.0,
             color: Colors.blue,

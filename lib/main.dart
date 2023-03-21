@@ -12,13 +12,10 @@ void main() {
   runApp(MaterialApp(
     theme: ThemeData(
       appBarTheme: AppBarTheme(
-        // color: Colors.red,
         backgroundColor: Colors.purpleAccent,
         shape: Border.all(color: Colors.black, width: 2),
         centerTitle: true,
-
       ),
-
     ),
     home: MyApp(),
   ));
@@ -54,11 +51,14 @@ class _MyAppState extends State<MyApp> {
             CustomWidget(
               name: "Hero Animation",
               routewidget: HeroAnimationHome(),
-            ),CustomWidget(
+            ),
+            CustomWidget(
               name: "AnimationIcon",
               routewidget: AnimatedIconScreen(),
             ),
-              CustomWidget(name: "AnimatedButtonInkWell", routewidget: AnimatedButtonInkWell()),
+            CustomWidget(
+                name: "AnimatedButtonInkWell",
+                routewidget: AnimatedButtonInkWell()),
           ],
         ),
       ),

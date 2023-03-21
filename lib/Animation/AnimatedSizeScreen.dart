@@ -27,16 +27,19 @@ class _AnimatedSizeScreenState extends State<AnimatedSizeScreen>  {
             ),
             AnimatedSize(
               duration: Duration(seconds: 1),
-              curve: Curves.easeInOut,
+              curve: Curves.linear,
               child: _showDetails
-                  ? Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Details 1'),
-                        Text('Details 2'),
-                        Text('Details 3'),
-                      ],
-                    )
+                  ? Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                        // crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Details 1',),
+                          Text('Details 2'),
+                          Text('Details 3'),
+                        ],
+                      ),
+                  )
                   : SizedBox.shrink(),
             ),
           ],

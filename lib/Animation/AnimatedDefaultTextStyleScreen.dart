@@ -4,10 +4,12 @@ class AnimatedDefaultTextStyleScreen extends StatefulWidget {
   const AnimatedDefaultTextStyleScreen({Key? key}) : super(key: key);
 
   @override
-  State<AnimatedDefaultTextStyleScreen> createState() => _AnimatedDefaultTextStyleScreenState();
+  State<AnimatedDefaultTextStyleScreen> createState() =>
+      _AnimatedDefaultTextStyleScreenState();
 }
 
-class _AnimatedDefaultTextStyleScreenState extends State<AnimatedDefaultTextStyleScreen> {
+class _AnimatedDefaultTextStyleScreenState
+    extends State<AnimatedDefaultTextStyleScreen> {
   bool _isBold = false;
   bool _isItalic = false;
   double _fontSize = 24.0;
@@ -28,7 +30,7 @@ class _AnimatedDefaultTextStyleScreenState extends State<AnimatedDefaultTextStyl
   void _increaseFontSize() {
     setState(() {
       _fontSize += 2.0;
-      // _fontSize = _fontSize + 2.0;
+      _fontSize = _fontSize + 2.0;
     });
   }
 

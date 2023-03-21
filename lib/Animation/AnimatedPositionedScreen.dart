@@ -4,7 +4,8 @@ class AnimatedPositionedScreen extends StatefulWidget {
   const AnimatedPositionedScreen({Key? key}) : super(key: key);
 
   @override
-  State<AnimatedPositionedScreen> createState() => _AnimatedPositionedScreenState();
+  State<AnimatedPositionedScreen> createState() =>
+      _AnimatedPositionedScreenState();
 }
 
 class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
@@ -20,8 +21,8 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
         child: Stack(
           children: <Widget>[
             AnimatedPositioned(
-              duration: Duration(milliseconds: 500),
-              curve: Curves.easeIn,
+              duration: Duration(seconds: 5),
+              curve: Curves.bounceOut,
               top: _isExpanded ? 100 : 200,
               left: _isExpanded ? 50 : 150,
               child: Container(

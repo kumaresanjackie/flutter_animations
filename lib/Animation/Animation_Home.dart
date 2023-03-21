@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:animations/customwidget.dart';
 import 'package:animations/main.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +26,7 @@ class AnimationContainerHome extends StatefulWidget {
 }
 
 class _AnimationContainerHomeState extends State<AnimationContainerHome> {
+  CustomFunctions functions = CustomFunctions();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,9 +38,12 @@ class _AnimationContainerHomeState extends State<AnimationContainerHome> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              functions.buttonOne(
+                  context, "Example", AnimatedPositionedScreen()),
               CustomWidget(
-                  name: "AnimatedPositioned",
-                  routewidget: AnimatedPositionedScreen()),
+                routewidget: AnimatedPositionedScreen(),
+                name: "AnimatedPositioned",
+              ),
               CustomWidget(
                   name: "AnimatedCrossFade",
                   routewidget: AnimatedCrossFadeScreen()),
@@ -74,6 +80,31 @@ class _AnimationContainerHomeState extends State<AnimationContainerHome> {
                   routewidget: AnimatedModalBarrierWidget()),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class CustomFunctions {
+  InkWell buttonOne(BuildContext context, String name, Widget route) {
+    return InkWell(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (ctx) => route));
+      },
+      child: Container(
+        margin: EdgeInsets.all(10),
+        height: 50,
+        width: 280,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          border: Border.fromBorderSide(BorderSide(color: Colors.black)),
+          color: Color(Random().nextInt(0xffffffff)).withOpacity(0.2),
+        ),
+        alignment: Alignment.center,
+        child: Text(
+          name,
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         ),
       ),
     );

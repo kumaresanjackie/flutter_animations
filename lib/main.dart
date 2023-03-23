@@ -2,6 +2,8 @@ import 'package:animations/AnimationBuilder/animationbuilder_home.dart';
 import 'package:animations/HeroAnimation/heroanimation_home.dart';
 import 'package:flutter/material.dart';
 
+import 'AnimatedContainer/animationContainerOne.dart';
+import 'AnimatedContainer/animationContainerTwo.dart';
 import 'AnimatedIconScreen.dart';
 import 'Animation/Animation_Home.dart';
 
@@ -59,6 +61,12 @@ class _MyAppState extends State<MyApp> {
             CustomWidget(
                 name: "AnimatedButtonInkWell",
                 routewidget: AnimatedButtonInkWell()),
+            CustomWidget(
+                name: "Animated Container",
+                routewidget: AnimatedContainerOne()),
+            CustomWidget(
+                name: "Animated Container Two",
+                routewidget: ACTwo()),
           ],
         ),
       ),

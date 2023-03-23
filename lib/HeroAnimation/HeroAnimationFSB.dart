@@ -20,10 +20,7 @@ class FirstScreenOne extends StatelessWidget {
                   BuildContext fromHeroContext,
                   BuildContext toHeroContext,
                   ) {
-                return Icon(
-                  Icons.view_comfy,
-                  size: 150.0,
-                );
+                return CircularProgressIndicator();
               },
               child: Icon(
                 Icons.image,

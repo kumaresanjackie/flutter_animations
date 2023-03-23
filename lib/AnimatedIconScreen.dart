@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
 class AnimatedIconScreen extends StatefulWidget {
   const AnimatedIconScreen({Key? key}) : super(key: key);
 
@@ -7,12 +8,11 @@ class AnimatedIconScreen extends StatefulWidget {
   State<AnimatedIconScreen> createState() => _AnimatedIconScreenState();
 }
 
-class _AnimatedIconScreenState extends State<AnimatedIconScreen> with TickerProviderStateMixin {
+class _AnimatedIconScreenState extends State<AnimatedIconScreen>
+    with TickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
-
   bool _isPlaying = false;
-
   @override
   void initState() {
     super.initState();
@@ -43,12 +43,14 @@ class _AnimatedIconScreenState extends State<AnimatedIconScreen> with TickerProv
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("AnimatedIcon"),),
+      appBar: AppBar(
+        title: Text("AnimatedIcon"),
+      ),
       body: Center(
         child: GestureDetector(
           onTap: _togglePlayPause,
           child: AnimatedIcon(
-            icon: AnimatedIcons.play_pause,
+            icon: AnimatedIcons.menu_arrow,
             progress: _animation,
             size: 50.0,
             color: Colors.blue,

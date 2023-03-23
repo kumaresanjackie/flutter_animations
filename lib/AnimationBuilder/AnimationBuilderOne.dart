@@ -2,7 +2,6 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
-
 class AnimationBuilderOne extends StatefulWidget {
   const AnimationBuilderOne({super.key});
 
@@ -15,7 +14,7 @@ class AnimationBuilderOne extends StatefulWidget {
 class _AnimationBuilderOneState extends State<AnimationBuilderOne>
     with TickerProviderStateMixin {
   late final AnimationController _controller = AnimationController(
-    duration: const Duration(seconds: 10),
+    duration: const Duration(milliseconds: 10),
     vsync: this,
   )..repeat();
 
@@ -28,7 +27,9 @@ class _AnimationBuilderOneState extends State<AnimationBuilderOne>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("AnimationBuilder"),),
+      appBar: AppBar(
+        title: Text("AnimationBuilder"),
+      ),
       body: AnimatedBuilder(
         animation: _controller,
         child: const Center(

@@ -62,9 +62,7 @@ class SecondScreen extends StatelessWidget {
                     Widget child,
                     ) {
                   return SizedBox(
-                    height: 150.0,
-                    width: 150.0,
-                    child: CircularProgressIndicator(),
+                  child: Text("page transition"),
                   );
                 },
                 child: Icon(

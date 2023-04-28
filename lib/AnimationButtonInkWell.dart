@@ -5,8 +5,6 @@ class AnimatedButtonInkWell extends StatefulWidget {
   _AnimatedButtonInkWelltState createState() => _AnimatedButtonInkWelltState();
 }
 
-
-
 class _AnimatedButtonInkWelltState extends State<AnimatedButtonInkWell> {
   bool _isPressed = false;
 
@@ -15,7 +13,7 @@ class _AnimatedButtonInkWelltState extends State<AnimatedButtonInkWell> {
     return Scaffold(
       body: Center(
         child: InkWell(
-           borderRadius: BorderRadius.circular(30.0),
+          borderRadius: BorderRadius.circular(30.0),
           onTap: () {},
           onTapDown: (_) {
             setState(() {
@@ -42,7 +40,8 @@ class _AnimatedButtonInkWelltState extends State<AnimatedButtonInkWell> {
                     : [Colors.pinkAccent.shade100, Colors.redAccent.shade100],
               ),
             ),
-            padding: const EdgeInsets.symmetric(horizontal: 40.0, vertical: 16.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 40.0, vertical: 16.0),
             child: Text(
               'Press Me',
               style: TextStyle(

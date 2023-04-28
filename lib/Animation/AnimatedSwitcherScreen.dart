@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AnimatedSwitcherScreen extends StatefulWidget {
   const AnimatedSwitcherScreen({Key? key}) : super(key: key);
 
@@ -17,6 +16,12 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
       appBar: AppBar(
         title: Text('AnimatedSwitcher Example'),
       ),
+      /*   AnimatedSwitcher: This widget animates the transition between different child widgets.
+   In this case, it has a duration of 500 milliseconds and contains a single child Text widget that displays the value of _count.
+
+    Text: This displays the current value of _count, which is interpolated into the string using string interpolation with the $ symbol.
+     The ValueKey is used to uniquely identify the widget so that the AnimatedSwitcher can track it during animation.
+    */
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -34,6 +39,7 @@ class _AnimatedSwitcherScreenState extends State<AnimatedSwitcherScreen> {
           ],
         ),
       ),
+      /*    onPressed callback that increments the value of _count by 1 */
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {

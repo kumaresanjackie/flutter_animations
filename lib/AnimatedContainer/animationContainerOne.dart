@@ -28,6 +28,8 @@ class _AnimatedContainerOneState extends State<AnimatedContainerOne> {
         onPressed: () {
           setState(() {
             h += 20;
+
+            // h= h+20;
             w += 20;
           });
         },

@@ -16,8 +16,22 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
       appBar: AppBar(
         title: Text('AnimatedCrossFade Example'),
       ),
+      /*
+      The AnimatedCrossFade widget defines the two child widgets that will be transitioned between using the firstChild and secondChild properties.
+      The duration property specifies the length of time for the animation to complete.
+
+      The firstChild widget is a Container widget that displays a blue box with a centered text of "First".
+
+      The secondChild widget is a Container widget that displays a red box with a centered text of "Second".
+
+      The crossFadeState property specifies which child widget to show using a boolean variable _isFirst.
+      If _isFirst is true, AnimatedCrossFade shows firstChild, otherwise, it shows secondChild.
+
+*/
       body: Center(
-        child: AnimatedCrossFade(
+
+
+      child: AnimatedCrossFade(
           duration: Duration(seconds: 3),
           firstChild: Container(
             width: 200,
@@ -51,6 +65,11 @@ class _AnimatedCrossFadeScreenState extends State<AnimatedCrossFadeScreen> {
               _isFirst ? CrossFadeState.showFirst : CrossFadeState.showSecond,
         ),
       ),
+/*
+        When clicked, it toggles the value of the _isFirst boolean variable,
+        which causes AnimatedCrossFade to animate the transition between the two child widgets
+
+*/
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {

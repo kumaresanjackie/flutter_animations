@@ -38,8 +38,8 @@ class _AnimationContainerHomeState extends State<AnimationContainerHome> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              functions.buttonOne(
-                  context, "Example", AnimatedPositionedScreen()),
+          /*    functions.buttonOne(
+                  context, "Example", AnimatedPositionedScreen()),*/
               CustomWidget(
                 routewidget: AnimatedPositionedScreen(),
                 name: "AnimatedPositioned",

@@ -17,6 +17,12 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
       appBar: AppBar(
         title: Text('AnimatedPositioned Example'),
       ),
+/*
+        This defines the body of the app as a Center widget containing a Stack widget with one child, an AnimatedPositioned widget.
+        This widget moves the Container it contains, with a duration of 5 seconds and using the bounceOut curve.
+        The top and left properties of the AnimatedPositioned widget are set conditionally, based on the _isExpanded boolean variable.
+        When _isExpanded is true, the Container moves to position (100, 50) and when false, it moves to (200, 150).
+*/
       body: Center(
         child: Stack(
           children: <Widget>[
@@ -34,6 +40,10 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
           ],
         ),
       ),
+/*
+        When pressed, toggles the _isExpanded variable between true and false.
+         This causes the AnimatedPositioned widget to animate the Container to its new position.
+*/
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {

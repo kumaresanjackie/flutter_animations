@@ -30,22 +30,25 @@ class _ACTwoState extends State<ACTwo> {
         alignment = Alignment.topRight;
       });
     });
+    three();
   }
 
   void three() async {
     await Future.delayed(Duration(seconds: 5)).then((value) {
       setState(() {
-        alignment = Alignment.topLeft;
+        alignment = Alignment.bottomRight;
       });
     });
+    four();
   }
 
   void four() async {
     await Future.delayed(Duration(seconds: 5)).then((value) {
       setState(() {
-        alignment = Alignment.topLeft;
+        alignment = Alignment.bottomLeft;
       });
     });
+    first();
   }
 
   @override

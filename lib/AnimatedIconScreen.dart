@@ -50,7 +50,7 @@ class _AnimatedIconScreenState extends State<AnimatedIconScreen>
         child: GestureDetector(
           onTap: _togglePlayPause,
           child: AnimatedIcon(
-            icon: AnimatedIcons.menu_arrow,
+            icon: AnimatedIcons.view_list,
             progress: _animation,
             size: 50.0,
             color: Colors.blue,

@@ -28,7 +28,7 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
           children: <Widget>[
             AnimatedPositioned(
               duration: Duration(seconds: 5),
-              curve: Curves.bounceOut,
+              curve: _isExpanded ? Curves.easeIn : Curves.bounceIn,
               top: _isExpanded ? 100 : 200,
               left: _isExpanded ? 50 : 150,
               child: Container(
@@ -48,6 +48,7 @@ class _AnimatedPositionedScreenState extends State<AnimatedPositionedScreen> {
         onPressed: () {
           setState(() {
             _isExpanded = !_isExpanded;
+            print(_isExpanded);
           });
         },
         child: Icon(Icons.play_arrow),
